@@ -1,10 +1,18 @@
-<div class="hero-unit">
-	<h1>Welcome to my first Rails App!</h1>
-	<p>
-		Get to know me, <span>Andrew Khajerian</span>!
-	</p>
+<% if user_signed_in? %>
+	<h1>Welcome! You are signed in<h1>
+	<p class="profile"><%= link_to "Go to Profile", '#' %></p>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome My Picture Hosting Site!</h1>
+		<p>
+			Hi, I'm <span>Andrew Khajerian</span>. Get to know me!
+		</p>
 
-	<!-- Link (href) in Rails -->
-	<%= link_to "realGM", "http://basketball.realgm.com/", class: "btn btn-primary btn-large" %>
-</div>
+		<!-- Link to Signup page -->
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
 
+ 
