@@ -1,7 +1,7 @@
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-/*-------Bootstrap--------*/
+/*---------------Bootstrap-------------*/
 
 $btnPrimaryBackground: orange;
 /*$navbarBackgroundHighlight: gray;*/
@@ -9,10 +9,6 @@ $btnPrimaryBackground: orange;
 /*$navbarBackground: white;*/
 
 @import 'bootstrap';
-
-body {
-	padding-top: 60px;
-}
 
 @import 'bootstrap-responsive';
 
@@ -22,6 +18,18 @@ body {
 }
 
 .profile {font-size: 28px;}
+
+
+/*----------HEADER-------------*/
+
+
+
+
+body {
+	padding-top: 60px;
+}
+
+
 
 /*----------FOOTER-------------*/
 

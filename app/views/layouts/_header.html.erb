@@ -1,4 +1,8 @@
-<div class="navbar navbar-fixed-top">
+<!-- <div class="main-image">
+  <img src="#"></img>
+</div>
+ -->
+<div class="navbar navbar-fixed-top"> <!-- -fixed-top -->
   <div class="navbar-inner">
     <div class="container">
  
@@ -17,6 +21,7 @@
       	<ul class="nav">
         	<li><%= link_to "Home", root_path %></li>
 					<li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Pictures", pictures_path %></li>
 				</ul>
 				<ul class="nav pull-right">
           <% if user_signed_in? %>

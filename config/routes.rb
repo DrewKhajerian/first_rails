@@ -1,10 +1,14 @@
 Omrails::Application.routes.draw do
 
+  resources :pins
+
+
   devise_for :views
 
   devise_for :users
 
   get 'about' => 'pages#about'
+  get 'pictures' => 'pages#pictures'
 
   root :to => 'pages#home'
 

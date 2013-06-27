@@ -1,0 +1,22 @@
+<h1>Listing pins</h1>
+
+<!-- makes table look nice and each row is striped -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @pins %>
+  </tbody>
+
+</table>
+
+
+
+<%= link_to 'New Pin', new_pin_path %>
