@@ -83,4 +83,8 @@ class PinsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def pins_param
+    params.require(:pin).permit(:description, :image)
+  end
 end
