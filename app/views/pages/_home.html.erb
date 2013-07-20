@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+	<!-- # -->
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome My Picture Hosting Site!</h1>
+		<p>
+			Hi, I'm <span>Andrew Khajerian</span>. Get to know me!
+		</p>
+
+		<!-- Link to Signup page -->
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
+
+ 
